@@ -1,0 +1,91 @@
+baseURL: "https://callebaut.io"
+title: Stijn's personal site
+paginate: 8
+theme: hugo-PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: ""
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+params:
+    env: dev #production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: Stijn's personal site
+    description: "Stijn Callebaut's personal site"
+    author: Me
+    # author: ["Me", "You"] # multiple authors
+
+    images: "<link or path of image for opengraph, twitter-cards>"
+
+    ShowReadingTime: true
+    ShowShareButtons: true
+    comments: false
+    defaultTheme: auto
+    disableThemeToggle: false
+    disableSpecial1stPost: false
+
+    assets:
+        favicon: "<link / abs url>"
+        favicon16x16: "<link / abs url>"
+        favicon32x32: "<link / abs url>"
+        apple_touch_icon: "<link / abs url>"
+        safari_pinned_tab: "<link / abs url>"
+
+    label:
+        text: "Home"
+        name: home
+        #icon: /apple-touch-icon.png
+        iconHeight: 35
+
+    # profile-mode
+    profileMode:
+        enabled: true # needs to be explicitly set
+        title: Stijn Callebaut
+        subtitle: 👋 I'm <strong>Stijn Callebaut</strong>, CTO at DexMach.<br /> I like running, the outdoors and a good book from time to time <br /> At <a href="https://www.dexmach.com">DexMach</a> I help put focus on the technology that matters, <br /> and I engage in customers cloud journeys to have direct feedback. <br />
+        imageUrl: 'img/profile.png'
+        imageTitle: Stijn Callebaut
+
+    socialIcons:
+        - name: linkedIn
+          url: "https://linkedin.com/"
+        - name: github
+          url: "https://github.com/"
+        - name: book
+          url: "https://goodreads.com/stijnca"
+        - name: twitter
+          url: "https://twitter.com/"
+
+    analytics:
+        google:
+            SiteVerificationTag: ""
+          
+    outputs:
+      home:
+          - HTML
+          - RSS
+          - JSON # is necessary
+
+menu:
+    main:
+        # - identifier: posts
+        #   name: posts
+        #   url: /posts/
+        #   weight: 10
+        # - identifier: archive
+        #   name: archive
+        #   url: /archive/
+        #   weight: 20
+        - identifier: Dexmach
+          name: dexmach
+          url: https://www.dexmach.com
+          weight: 40
+        # - identifier: search
+        #   name: search
+        #   url: /search/
+        #   weight: 1
