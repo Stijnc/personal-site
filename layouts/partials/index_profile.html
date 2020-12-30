@@ -3,11 +3,7 @@
     <div class="profile_inner">
         {{- if .imageUrl}}<img src="{{ .imageUrl}}" alt="{{ .imageTitle | default "profile image" }}"
             height="{{- .imageHeight | default 150 -}}" width="{{- .imageWidth | default 150 -}}" />{{- end}}
-        <!-- <h1>{{- .title | default $.Site.Title | markdownify -}}</h1> -->
         <p>{{- .subtitle | safeHTML -}}</p>
-        <!-- CHANGED FOR LINE BREAKS
-            <span>{{- .subtitle | markdownify -}}</span> 
-        -->
         {{- partial "social_icons.html" $.Site.Params.socialIcons -}}
 
         {{- with .buttons }}
