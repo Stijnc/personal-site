@@ -31,9 +31,9 @@ jobs:
       - name: Publish artifact
         uses: actions/upload-artifact@v2
         if: contains(github.ref, 'main') && github.event_name == 'push'
-          with:
-            name: personal-website
-            path: public/
+        with:
+          name: personal-website
+          path: public/
 
   #only deploy to gh-pages when pushing to main
   deploy:
