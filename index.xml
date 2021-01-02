@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stijn&#39;s personal site</title>
+    <link>https://callebaut.io/</link>
+    <description>Recent content on Stijn&#39;s personal site</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://callebaut.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Archive</title>
+      <link>https://callebaut.io/archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://callebaut.io/archive/</guid>
+      <description>archive</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://callebaut.io/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://callebaut.io/search/</guid>
+      <description>search</description>
+    </item>
+    
+  </channel>
+</rss>
