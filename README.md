@@ -13,9 +13,27 @@ Some modifications are made:
 
 ## to-do
 
+## technical
+
+- [x] enable github pages
+- [x] create azure DNS for callebaut.io
+- [x] enforce https
+- [x] github actions to deploy hugo
+    - [x] split build and deploy
 - [ ] add tags and packages
-- [ ] deploy to Azure static web apps
+- [ ] deploy to Azure static web apps ?
 - [ ] implement environments (`Azure static web apps or github pages)
 - [ ] terraform for DNS config (Azure DNS)
     - [ ] create terraform
     - [ ] exclude infra folder from trigger
+- [ ] prettify commit messages on gh-pages deploy
+
+## website
+
+- [x] change theme to [paperMod](https://themes.gohugo.io/hugo-papermod/)
+- [x] enable auto dark\light mode
+- [ ] add blog section 
+- [ ] enable archive and search
+- [ ] add favicons
+
+
