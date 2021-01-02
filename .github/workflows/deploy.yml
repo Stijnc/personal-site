@@ -50,6 +50,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-           cname: ${{ env.CNAME }}
+          cname: ${{ env.CNAME }}
 
 
