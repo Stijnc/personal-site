@@ -16,9 +16,6 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-        with:
-          submodules: true
-          fetch-depth: 0
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with: 
@@ -38,6 +35,7 @@ jobs:
   #only deploy to gh-pages when pushing to main
   deploy:
     runs-on: Ubuntu-20.04
+    needs: build
     if: contains(github.ref, 'main') && github.event_name == 'push'
     steps:
       - uses: actions/download-artifact@v2
