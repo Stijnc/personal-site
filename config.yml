@@ -71,6 +71,11 @@ params:
           - RSS
           - JSON # is for search necessary
 
+taxonomies:
+    category: categories
+    series: series
+    tag: tags
+
 menu:
     main:
         # - identifier: posts
