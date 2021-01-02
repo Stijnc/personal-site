@@ -30,7 +30,7 @@ jobs:
         # only publish an artifact when pushing to main. 
       - name: Publish artifact
         uses: actions/upload-artifact@v2
-        if:if: contains(github.ref, 'main') && github.event_name == 'push'
+        if: contains(github.ref, 'main') && github.event_name == 'push'
           with:
             name: personal-website
             path: public/
