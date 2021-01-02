@@ -2,11 +2,18 @@ name: github pages
 
 on:
   push:
+    paths-ignore:
+      - '**/README.md'
+      - LICENSE
     branches:
       - main
   pull_request:
+    paths-ignore:
+      - '**/README.md'
+      - LICENSE
     branches:
       - master
+  
 
 env:
   CNAME: "callebaut.io"
