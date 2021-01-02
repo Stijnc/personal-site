@@ -9,7 +9,7 @@ on:
       - master
 
 env:
-  CNANE: "callebaut.io"
+  CNAME: "callebaut.io"
 
 jobs:
   build:
