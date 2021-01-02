@@ -18,12 +18,13 @@ params:
     env: dev #production # to enable google analytics, opengraph, twitter-cards and schema.
     title: Stijn's personal site
     description: "Stijn Callebaut's personal site"
-    author: Me
+    author: Stijn
     # author: ["Me", "You"] # multiple authors
 
     images: "<link or path of image for opengraph, twitter-cards>"
 
     ShowReadingTime: true
+    ShowToc: true
     ShowShareButtons: true
     comments: false
     defaultTheme: auto
