@@ -47,7 +47,7 @@ params:
     profileMode:
         enabled: true # needs to be explicitly set
         title: Stijn Callebaut
-        subtitle: 👋 I'm <strong>Stijn Callebaut</strong>, CTO at DexMach.<br /> I like running, the outdoors and a good book from time to time <br /> At <a href="https://www.dexmach.com">DexMach</a> I help put focus on the technology that matters, <br /> and I engage in customers cloud journeys to have direct feedback. <br />
+        subtitle: 👋 I'm <strong>Stijn Callebaut</strong>, CTO at DexMach.<br /> I like running, the outdoors, a good book from time to time and lego. <br /> At <a href="https://www.dexmach.com">DexMach</a> I help put focus on the technology that matters, <br /> and I engage in customers cloud journeys to have direct feedback. <br />
         imageUrl: 'img/profile.png'
         imageTitle: Stijn Callebaut
 
