@@ -14,17 +14,18 @@ minify:
     disableXML: true
     minifyOutput: true
 
+social:
+    facebook: ""
+
 params:
-    env: dev #production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: Stijn's personal site
+    env: production #production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: "Stijn's personal site"
     description: "Stijn Callebaut's personal site"
     author: Stijn
-    # author: ["Me", "You"] # multiple authors
 
-    images: "<link or path of image for opengraph, twitter-cards>"
+    images: "img/banner.png"
 
     ShowReadingTime: true
-    ShowToc: true
     ShowShareButtons: true
     comments: false
     defaultTheme: auto
@@ -43,7 +44,8 @@ params:
         name: home
         #icon: /apple-touch-icon.png
         iconHeight: 35
-
+    cover:
+        hiddenInList: true
     # profile-mode
     profileMode:
         enabled: true # needs to be explicitly set
