@@ -32,8 +32,11 @@ Some modifications are made:
 
 - [x] change theme to [paperMod](https://themes.gohugo.io/hugo-papermod/)
 - [x] enable auto dark\light mode
-- [ ] add blog section 
+- [x] add blog section
+    - [x] add series links
+- [ ] enable blog
 - [ ] enable archive and search
-- [ ] add favicons
-
+- [x] add favicons
+- [ ] validate twitter cards
+- [ ] validate opengraph cards
 
