@@ -15,7 +15,7 @@ minify:
     minifyOutput: true
 
 social:
-    facebook: ""
+    facebook: "stijn.callebaut"
 
 params:
     env: production #production # to enable google analytics, opengraph, twitter-cards and schema.
