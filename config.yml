@@ -23,7 +23,7 @@ params:
     description: "Stijn Callebaut's personal site"
     author: Stijn
 
-    images: "img/banner.png"
+    images: "img/personal-website-screenshot.png"
 
     ShowReadingTime: true
     ShowShareButtons: true
