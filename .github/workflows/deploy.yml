@@ -13,7 +13,10 @@ on:
       - LICENSE
     branches:
       - master
-  
+  schedule:
+    #scheduled deployments for future posts during weekdays
+    - cron: "22 22 * * 1-5"
+  workflow_dispatch:
 
 env:
   CNAME: "callebaut.io"
@@ -58,6 +61,9 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_message: ${{ github.event.head_commit.message }}
           cname: ${{ env.CNAME }}
 
 
