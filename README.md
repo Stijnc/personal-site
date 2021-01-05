@@ -28,7 +28,8 @@ Some modifications are made:
     - [ ] create terraform
     - [ ] exclude infra folder from trigger
 - [ ] prettify commit messages on gh-pages deploy
-
+- [ ] integrate [html test](https://github.com/wjdp/htmltest)
+ 
 ## website
 
 - [x] change theme to [paperMod](https://themes.gohugo.io/hugo-papermod/)
