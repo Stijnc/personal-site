@@ -5,8 +5,9 @@
     Where he posts some braindumps regarding Microsoft Azure.
 - name: Jan Van Meirvenne
   url: https://www.jeancloud.dev
-  summary: Blog of Jan Van Meirvenne, nicknamed ‘Jean Cloud’.
-, He has a knowledge split across the Azure platform, while getting a kick out of modernizing apps, data and identity
+  summary: | 
+    Blog of Jan Van Meirvenne, nicknamed ‘Jean Cloud’.
+    He has a knowledge split across the Azure platform, while getting a kick out of modernizing apps, data and identity
 - name: Karel De Winter
   url: https://google.be
   summary: | 
