@@ -1,0 +1,15 @@
+- name: Remi Minnebo
+  url: https://remiminnebo.github.io
+  summary: | 
+    Blog of my colleague Remi.
+    Where he posts some braindumps regarding Microsoft Azure.
+- name: Karel De Winter
+  url: https://google.be
+  summary: | 
+    Blog of my colleague Karel.  
+    He rethinks, transforms and shares Azure knowledge!!
+- name: Didier Van Hoye 
+  url: https://blog.workinghardinit.work
+  summary: | 
+    Blog of Didier Van Hoye.  
+    Sharing his view on IT from the trenches

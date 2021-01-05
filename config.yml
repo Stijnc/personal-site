@@ -93,6 +93,10 @@ menu:
           name: dexmach
           url: https://www.dexmach.com
           weight: 40
+        - identifier: links
+          name: links
+          url: /links/
+          weight: 40
         # - identifier: search
         #   name: search
         #   url: /search/
