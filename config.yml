@@ -96,7 +96,7 @@ menu:
         - identifier: links
           name: links
           url: /links/
-          weight: 40
+          weight: 30
         # - identifier: search
         #   name: search
         #   url: /search/
