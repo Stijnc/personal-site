@@ -12,7 +12,7 @@
     <section class="entry-content">
       <p>{{ .summary | markdownify }}</p>
     </section>
-    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .url }}"></a>
   </article>
 {{ end }}
 {{- end  }}{{/* end main */}}
