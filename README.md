@@ -37,6 +37,7 @@ Some modifications are made:
 - [ ] enable blog
 - [ ] enable archive and search
 - [x] add favicons
-- [ ] validate twitter cards
-- [ ] validate opengraph cards
+- [x] validate twitter cards
+- [x] validate opengraph cards
+- [x] add links to other resources \ blogs
 
