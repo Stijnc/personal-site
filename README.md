@@ -10,6 +10,7 @@ Some modifications are made:
 
 - index_profile: removed the title, added the subtitle section
 - svg: added a home and book icon
+- links: add a link template
 
 ## to-do
 
@@ -40,4 +41,7 @@ Some modifications are made:
 - [x] validate twitter cards
 - [x] validate opengraph cards
 - [x] add links to other resources \ blogs
+    - [x] create data file
+    - [x] create template
+    - [x] link content page
 
