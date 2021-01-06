@@ -22,13 +22,17 @@ Some modifications are made:
 - [x] github actions to deploy hugo
     - [x] split build and deploy
 - [ ] add tags and packages
+    - [ ] add app insights annotations
 - [ ] deploy to Azure static web apps ?
 - [ ] implement environments (`Azure static web apps or github pages)
-- [ ] terraform for DNS config (Azure DNS)
-    - [ ] create terraform
+- [ ] terraform
+    - [ ] create terraform for DNS config
+    - [ ] deploy app insights
     - [ ] exclude infra folder from trigger
-- [ ] prettify commit messages on gh-pages deploy
+- [x] prettify commit messages on gh-pages deploy
 - [ ] integrate [html test](https://github.com/wjdp/htmltest)
+- [x] add application insights for observability
+    - [x] templatize app insight integration (config and partial templates)
  
 ## website
 

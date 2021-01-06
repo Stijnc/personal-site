@@ -32,6 +32,10 @@ params:
     disableThemeToggle: false
     disableSpecial1stPost: false
 
+    application_insights:
+      enabled: true
+      key: d1e0153d-5370-4959-b6eb-8886a7959e99
+
     assets:
         favicon: "img/favicon.ico"
         favicon16x16: "img/favicon-16x16.png"
