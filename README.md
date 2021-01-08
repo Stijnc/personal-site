@@ -31,6 +31,7 @@ Some modifications are made:
     - [ ] exclude infra folder from trigger
 - [x] prettify commit messages on gh-pages deploy
 - [ ] integrate [html test](https://github.com/wjdp/htmltest)
+- [ ] integrate [pa11y](https://pa11y.org) accessibility test
 - [x] add application insights for observability
     - [x] templatize app insight integration (config and partial templates)
  
