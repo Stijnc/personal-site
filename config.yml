@@ -32,6 +32,8 @@ params:
     disableThemeToggle: false
     disableSpecial1stPost: false
 
+    enableGitInfo: true
+
     application_insights:
       enabled: true
       key: d1e0153d-5370-4959-b6eb-8886a7959e99
