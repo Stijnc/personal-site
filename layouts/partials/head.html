@@ -11,8 +11,8 @@
     {{- range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- end -}}" />
 <meta name="description" content="{{- with .Description }}{{ . }}{{- else }}{{- if .IsPage}}
     {{- .Summary | default (printf " %s - %s " .Title  .Site.Title) }}{{- else }}
-    {{- with .Site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}"> {{ if or .Params.author .Site.Params.author }}
-<meta name="author" content="{{ .Params.author | default .Site.Params.author }}">{{ end }}
+    {{- with .Site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}"> {{- if or .Params.author .Site.Params.author }}
+<meta name="author" content="{{ .Params.author | default .Site.Params.author }}">{{- end }}
 
 <link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}" /> {{- if .Site.Params.analytics.google.SiteVerificationTag }}
 <meta name="google-site-verification" content="{{ .Site.Params.analytics.google.SiteVerificationTag }}" /> {{- end}}
