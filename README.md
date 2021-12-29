@@ -23,12 +23,6 @@ Some modifications are made:
     - [x] split build and deploy
 - [ ] add tags and packages
     - [ ] add app insights annotations
-- [ ] deploy to Azure static web apps ?
-- [ ] implement environments (`Azure static web apps or github pages)
-- [ ] terraform
-    - [ ] create terraform for DNS config
-    - [ ] deploy app insights
-    - [ ] exclude infra folder from trigger
 - [x] prettify commit messages on gh-pages deploy
 - [ ] integrate [html test](https://github.com/wjdp/htmltest)
 - [ ] integrate [pa11y](https://pa11y.org) accessibility test
@@ -40,14 +34,26 @@ Some modifications are made:
 - [x] change theme to [paperMod](https://themes.gohugo.io/hugo-papermod/)
 - [x] enable auto dark\light mode
 - [x] add blog section
-    - [x] add series links
+  - [x] add series links
 - [ ] enable blog
+  - [ ] enable comments via GH issues (https://utteranc.es)
 - [ ] enable archive and search
 - [x] add favicons
 - [x] validate twitter cards
 - [x] validate opengraph cards
 - [x] add links to other resources \ blogs
-    - [x] create data file
-    - [x] create template
-    - [x] link content page
+  - [x] create data file
+  - [x] create template
+  - [x] link content page
+- [ ] Mozilla observatry
+  - [ ] content security policy
+  - [ ] HTTO strict transport security
+  - [ ] X-Content-Type-Options
+  - [ ] X-Frame-Options
+  - [ ] X-Xss-Protection
+- [ ] pagespeed
+  - [ ] properly size images
+  - [ ] serve images in next-gen format
+  - [ ] specify explicit width and height
+- [ ] html encode emoji's
 

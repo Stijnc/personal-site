@@ -1,8 +1,8 @@
 ---
-draft: "true"
-author: "Me"
+draft: true
 title: "Cloud native"
-date: "2019-03-05"
+date: "1/1/2021"
+series: ["cloudnative"]
 description: "Our vision to cloud native"
 tags: ["cloud", "cloud-native", "gitops", "kubernetes"]
 ---
