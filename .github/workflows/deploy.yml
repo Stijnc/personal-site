@@ -1,4 +1,4 @@
-name: github pages
+name: deploy to github pages
 
 on:
   push:
@@ -13,9 +13,9 @@ on:
       - LICENSE
     branches:
       - master
-  schedule:
+  #schedule:
     #scheduled deployments for future posts during weekdays
-    - cron: "22 22 * * 1-5"
+   # - cron: "22 22 * * 1-5"
   workflow_dispatch:
 
 env:
