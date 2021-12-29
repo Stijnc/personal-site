@@ -1,5 +1,5 @@
 baseURL: "https://callebaut.io"
-title: Stijn's personal site
+title: Stijn Callebaut's personal site
 paginate: 8
 theme: hugo-PaperMod
 
@@ -19,9 +19,9 @@ social:
 
 params:
     env: production #production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: "Stijn's personal site"
+    title: "Stijn Callebaut's personal site"
     description: "Stijn Callebaut's personal site"
-    author: Stijn
+    author: Stijn Callebaut
 
     images: ["img/personal-website-screenshot.png"]
 
@@ -56,8 +56,8 @@ params:
     profileMode:
         enabled: true # needs to be explicitly set
         title: Stijn Callebaut
-        subtitle: 👋 I'm <strong>Stijn Callebaut</strong>, CTO at DexMach.<br /> I like running, the outdoors, a good book from time to time and lego. <br /> At <a href="https://www.dexmach.com">DexMach</a> I help put focus on the technology that matters, <br /> and I engage in customers cloud journeys to have direct feedback. <br /> Let's Connect <img src="https://img.icons8.com/emoji/26/hot-beverage" alt="hot beverage" style="margin-bottom:-5px"/><br />
-        imageUrl: 'img/profile.png'
+        subtitle: "&#128075; I'm <strong>Stijn Callebaut</strong>, CTO at DexMach.<br /> I like running, the outdoors, a good book from time to time and lego. <br /> At <a href='https://www.dexmach.com'>DexMach</a> I help put focus on the technology that matters, <br /> and I engage in customers cloud journeys to have direct feedback. <br /> Let's Connect <span style='font-size:21px;'>&#x2615;</span><br />"
+        imageUrl: 'img/profile.webp'
         imageTitle: Stijn Callebaut
 
     socialIcons:
@@ -79,6 +79,17 @@ params:
           - HTML
           - RSS
           - JSON # is for search necessary
+    csp:
+      childsrc: ["'self'"]
+      fontsrc: ["'self'"]
+      formaction: ["'self'"]
+      framesrc: ["'self'"]
+      imgsrc: ["'self'", "https:"]
+      objectsrc: ["'none'"]
+      stylesrc: ["'self'", "'unsafe-inline'"]
+      scriptsrc: ["'self'", "*.vo.msecnd.net", "'unsafe-inline'"]
+      frameancestors: ["'self'"]
+      prefetchsrc: ["'self'"]
 
 taxonomies:
     category: categories
