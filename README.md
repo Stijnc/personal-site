@@ -45,15 +45,15 @@ Some modifications are made:
   - [x] create data file
   - [x] create template
   - [x] link content page
-- [ ] Mozilla observatry
-  - [ ] content security policy
-  - [ ] HTTO strict transport security
-  - [ ] X-Content-Type-Options
-  - [ ] X-Frame-Options
-  - [ ] X-Xss-Protection
-- [ ] pagespeed
-  - [ ] properly size images
-  - [ ] serve images in next-gen format
-  - [ ] specify explicit width and height
-- [ ] html encode emoji's
+- [x] Mozilla observatry (GH pages does not allow for csp - set via head)
+  - [x] content security policy
+  - [x] HTTO strict transport security
+  - [x] X-Content-Type-Options
+  - [x] X-Frame-Options
+  - [x] X-Xss-Protection
+- [x] pagespeed
+  - [x] properly size images
+  - [x] serve images in next-gen format
+  - [x] specify explicit width and height
+- [x] html encode emoji's
 
