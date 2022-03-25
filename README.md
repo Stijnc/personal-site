@@ -47,13 +47,13 @@ Some modifications are made:
   - [x] link content page
 - [ ] Mozilla observatry
   - [ ] content security policy
-  - [ ] HTTO strict transport security
+  - [ ] HTTP strict transport security
   - [ ] X-Content-Type-Options
   - [ ] X-Frame-Options
   - [ ] X-Xss-Protection
-- [ ] pagespeed
-  - [ ] properly size images
-  - [ ] serve images in next-gen format
-  - [ ] specify explicit width and height
-- [ ] html encode emoji's
+- [x] [pagespeed](https://pagespeed.web.dev/report?url=https%3A%2F%2Fcallebaut.io%2F)
+  - [x] properly size images
+  - [x] serve images in next-gen format
+  - [x] specify explicit width and height
+- [x] html encode emoji's
 
