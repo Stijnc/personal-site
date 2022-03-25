@@ -11,110 +11,117 @@ buildExpired: false
 googleAnalytics: ""
 
 minify:
-    disableXML: true
-    minifyOutput: true
+  disableXML: true
+  minifyOutput: true
 
 social:
-    facebook: "stijn.callebaut"
+  facebook: "stijn.callebaut"
 
 params:
-    env: production #production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: "Stijn Callebaut's personal site"
-    description: "Stijn Callebaut's personal site"
-    author: Stijn Callebaut
+  env: production #production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: "Stijn Callebaut's personal site"
+  description: "Stijn Callebaut's personal site"
+  author: Stijn Callebaut
 
-    images: ["img/personal-website-screenshot.png"]
+  images: ["img/personal-website-screenshot.png"]
 
-    ShowReadingTime: true
-    ShowShareButtons: true
-    comments: false
-    defaultTheme: auto
-    disableThemeToggle: false
-    disableSpecial1stPost: false
+  ShowReadingTime: true
+  ShowShareButtons: true
+  comments: false
+  defaultTheme: auto
+  disableThemeToggle: false
+  disableSpecial1stPost: false
 
-    enableGitInfo: true
+  enableGitInfo: true
 
-    application_insights:
-      enabled: true
-      key: d1e0153d-5370-4959-b6eb-8886a7959e99
+  application_insights:
+    enabled: true
+    key: d1e0153d-5370-4959-b6eb-8886a7959e99
 
-    assets:
-        favicon: "img/favicon.ico"
-        favicon16x16: "img/favicon-16x16.png"
-        favicon32x32: "img/favicon-32x32.png"
-        apple_touch_icon: "apple-touch-icon.png"
-        safari_pinned_tab: "apple-touch-icon.png"
+  assets:
+    favicon: "img/favicon.ico"
+    favicon16x16: "img/favicon-16x16.png"
+    favicon32x32: "img/favicon-32x32.png"
+    apple_touch_icon: "apple-touch-icon.png"
+    safari_pinned_tab: "apple-touch-icon.png"
 
-    label:
-        text: "Home"
-        name: home
-        #icon: /apple-touch-icon.png
-        iconHeight: 35
-    cover:
-        hiddenInList: true
-    # profile-mode
-    profileMode:
-        enabled: true # needs to be explicitly set
-        title: Stijn Callebaut
-        subtitle: "&#128075; I'm <strong>Stijn Callebaut</strong>, CTO at DexMach.<br /> I like running, the outdoors, a good book from time to time and lego. <br /> At <a href='https://www.dexmach.com'>DexMach</a> I help put focus on the technology that matters, <br /> and I engage in customers cloud journeys to have direct feedback. <br /> Let's Connect <span style='font-size:21px;'>&#x2615;</span><br />"
-        imageUrl: 'img/profile.webp'
-        imageTitle: Stijn Callebaut
+  label:
+    text: "Home"
+    name: home
+    #icon: /apple-touch-icon.png
+    iconHeight: 35
+  cover:
+    hiddenInList: true
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: Stijn Callebaut
+    subtitle: "&#128075; I'm <strong>Stijn Callebaut</strong>, COO at DexMach.<br /> I like running, the outdoors, a good book from time to time and lego. <br /> At <a href='https://www.dexmach.com'>DexMach</a> I drive operational excellence at both professional and managed services. <br /> I believe openness and inclusiveness are key for organizational and professional growth, <br /> and I engage in customers cloud journeys to have direct feedback. <br /> Let's Connect <span style='font-size:21px;'>&#x2615;</span><br />"
+    imageUrl: "img/profile.webp"
+    imageTitle: Stijn Callebaut
 
-    socialIcons:
-        - name: linkedIn
-          url: "https://www.linkedin.com/in/stijncallebaut/"
-        - name: github
-          url: "https://github.com/stijnc"
-        - name: book
-          url: "https://goodreads.com/stijnca"
-        - name: twitter
-          url: "https://twitter.com/stijnca"
+  socialIcons:
+    - name: linkedIn
+      url: "https://www.linkedin.com/in/stijncallebaut/"
+    - name: github
+      url: "https://github.com/stijnc"
+    - name: book
+      url: "https://goodreads.com/stijnca"
+    - name: twitter
+      url: "https://twitter.com/stijnca"
 
-    analytics:
-        google:
-            SiteVerificationTag: ""
-          
-    outputs:
-      home:
-          - HTML
-          - RSS
-          - JSON # is for search necessary
-    csp:
-      childsrc: ["'self'"]
-      fontsrc: ["'self'"]
-      formaction: ["'self'"]
-      framesrc: ["'self'"]
-      imgsrc: ["'self'", "https:"]
-      objectsrc: ["'none'"]
-      stylesrc: ["'self'", "'unsafe-inline'"]
-      scriptsrc: ["'self'", "*.vo.msecnd.net", "'unsafe-inline'"]
-      frameancestors: ["'self'"]
-      prefetchsrc: ["'self'"]
+  analytics:
+    google:
+      SiteVerificationTag: ""
+
+  outputs:
+    home:
+      - HTML
+      - RSS
+      - JSON # is for search necessary
+  csp:
+    childsrc: ["'self'"]
+    fontsrc: ["'self'"]
+    formaction: ["'self'"]
+    framesrc: ["'self'"]
+    imgsrc: ["'self'", "https:"]
+    objectsrc: ["'none'"]
+    stylesrc: ["'self'", "'unsafe-inline'"]
+    scriptsrc: ["'self'", "*.vo.msecnd.net", "'unsafe-inline'"]
+    frameancestors: ["'self'"]
+    prefetchsrc: ["'self'"]
+
+  jsonresume:
+    url: "https://raw.githubusercontent.com/Stijnc/resume/main/src/stijncallebaut.resume.json"
 
 taxonomies:
-    category: categories
-    series: series
-    tag: tags
+  category: categories
+  series: series
+  tag: tags
 
 menu:
-    main:
-        # - identifier: posts
-        #   name: posts
-        #   url: /posts/
-        #   weight: 10
-        # - identifier: archive
-        #   name: archive
-        #   url: /archive/
-        #   weight: 20
-        - identifier: Dexmach
-          name: dexmach
-          url: https://www.dexmach.com
-          weight: 40
-        - identifier: links
-          name: links
-          url: /links/
-          weight: 30
-        # - identifier: search
-        #   name: search
-        #   url: /search/
-        #   weight: 1
+  main:
+    # - identifier: posts
+    #   name: posts
+    #   url: /posts/
+    #   weight: 10
+    # - identifier: archive
+    #   name: archive
+    #   url: /archive/
+    #   weight: 20
+    - identifier: About
+      name: about
+      url: /about/
+      weight: 20
+    - identifier: Dexmach
+      name: dexmach
+      url: https://www.dexmach.com
+      weight: 40
+    - identifier: links
+      name: links
+      url: /links/
+      weight: 30
+    # - identifier: search
+    #   name: search
+    #   url: /search/
+    #   weight: 1
