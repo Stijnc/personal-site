@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Stijn Callebaut&#39;s personal site</title>
-    <link>https://callebaut.io/</link>
-    <description>Recent content on Stijn Callebaut&#39;s personal site</description>
+    <title>Posts on Stijn Callebaut&#39;s personal site</title>
+    <link>https://callebaut.io/posts/</link>
+    <description>Recent content in Posts on Stijn Callebaut&#39;s personal site</description>
     <image>
       <url>https://callebaut.io/img/personal-website-screenshot.png</url>
       <link>https://callebaut.io/img/personal-website-screenshot.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 31 Jan 2022 14:12:33 +0100</lastBuildDate><atom:link href="https://callebaut.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 Jan 2022 14:12:33 +0100</lastBuildDate><atom:link href="https://callebaut.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure Static Web App URL shortener</title>
       <link>https://callebaut.io/posts/aswa-url-shortener/</link>
@@ -20,26 +20,6 @@
 stijn.run, my personal URL shortener I was on the look-out for a URL shortener with a custom domain for the smallest fee possible and stumbled upon Netifly-URLShortener.
 I find this a elegant solution through its simplicity, but at the same time, I wanted to experiment a bit with Azure Static Web App as well.</description>
     </item>
-    
-    <item>
-      <title>About me</title>
-      <link>https://callebaut.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://callebaut.io/about/</guid>
-      <description>about</description>
-    </item>
-    
-    
-    <item>
-      <title>Links to other useful blogs</title>
-      <link>https://callebaut.io/links/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://callebaut.io/links/</guid>
-      <description>Links to other resources</description>
-    </item>
-    
     
   </channel>
 </rss>

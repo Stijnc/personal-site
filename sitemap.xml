@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://callebaut.io/posts/aswa-url-shortener/</loc>
+    <lastmod>2022-01-31T14:12:33+01:00</lastmod>
+  </url><url>
+    <loc>https://callebaut.io/posts/</loc>
+    <lastmod>2022-01-31T14:12:33+01:00</lastmod>
+  </url><url>
+    <loc>https://callebaut.io/</loc>
+    <lastmod>2022-01-31T14:12:33+01:00</lastmod>
+  </url><url>
+    <loc>https://callebaut.io/about/</loc>
+  </url><url>
     <loc>https://callebaut.io/archive/</loc>
   </url><url>
     <loc>https://callebaut.io/categories/</loc>
@@ -11,8 +22,6 @@
     <loc>https://callebaut.io/search/</loc>
   </url><url>
     <loc>https://callebaut.io/series/</loc>
-  </url><url>
-    <loc>https://callebaut.io/</loc>
   </url><url>
     <loc>https://callebaut.io/tags/</loc>
   </url>
