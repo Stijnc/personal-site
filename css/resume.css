@@ -1,0 +1,131 @@
+:root {
+  --text: #333333;
+  --headline: #c9cccf;
+  --sub-headline: #96999b;
+  --primary: rgb(190, 191, 196);
+  --secondary: rgb(238, 245, 255);
+}
+
+#resume h1 {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+#resume h2 {
+  margin-top: 2rem;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--headline);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+#resume h3 {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  margin-top: 0.5rem;
+}
+
+#resume h4 {
+  font-size: 14px;
+  color: var(--sub-headline);
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+}
+
+#resume p,
+li {
+  margin-bottom: 0.25rem;
+  font-size: 14px;
+}
+
+#resume a {
+  transition: box-shadow 160ms ease 0s;
+  border-bottom: 2px solid var(--primary);
+  text-decoration: none;
+  color: var(--text);
+}
+
+#resume a:hover {
+  box-shadow: var(--primary) 0px -1.2em 0px inset;
+}
+
+#resume section ul {
+  margin-top: 0.5rem;
+  margin-left: 2.5rem;
+  list-style: disc;
+}
+
+#resume .contact {
+  padding-top: 2rem;
+}
+
+#resume .contact span {
+  width: 100px;
+  display: inline-block;
+}
+
+.contact {
+  padding-top: 2rem;
+}
+
+.contact span {
+  width: 100px;
+  display: inline-block;
+}
+
+#resume .languages {
+  padding-top: 2rem;
+}
+
+#resume .languages span {
+  width: 100px;
+  display: inline-block;
+}
+
+#resume .skills ul {
+  display: inline;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+#resume .skills li {
+  white-space: nowrap;
+  list-style-type: none;
+  display: inline-block;
+  background-color: var(--sub-headline);
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-radius: 3px;
+  background: var(--primary);
+}
+
+#resume .position {
+  margin-bottom: 1.5rem;
+}
+
+#resume .grey {
+  color: var(--sub-headline);
+}
+
+#resume .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#resume .pdf {
+  color: var(--headline);
+  transition: color ease 160ms;
+  border: none;
+  box-shadow: none;
+}
+
+#resume .pdf:hover {
+  box-shadow: none;
+  color: var(--sub-headline);
+}
