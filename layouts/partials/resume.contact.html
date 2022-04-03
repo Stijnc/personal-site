@@ -1,0 +1,55 @@
+<div class="header">
+    {{- if .pdfLink}}
+    <a class="pdf" title="Download PDF" href={{ .pdfLink}}>
+
+    </a> {{end}}
+</div>
+<p>{{ .label}}</p>
+
+{{if .location}}
+<p class="grey">{{ .location.city}}, {{ .location.countryCode}}</p>
+{{end}} {{- if .summary}}
+<p class="grey">{{ .summary}}</p>
+{{- end}}
+<!--
+
+ <div class="header">
+    <h1></h1>
+    {{if .pdfLink}}
+      <a class="pdf" title="Download PDF" href={{ .pdfLink}}>
+       
+      </a>
+    {{end}}
+  </div>
+  
+  <p>{{ .label}}</p>
+
+  {{if .location}}
+    <p class="grey">{{ .location.city}}, {{ .location.countryCode}}</p>
+  {{end}}
+
+
+<h2>Contact Information</h2>
+<section class="contact">
+    {{- if .url}}
+    <p>
+        <span>Website:</span>
+        <a href="{{ .website }}" target="_blank" rel="noopener">{{ .url }}</a>
+    </p>
+    {{end}} {{- if .email}}
+    <p>
+        <span>Email:</span>
+        <a href="mailto:{{ .email }}" target="_blank" rel="noopener noreferrer">{{ .email }}</a>
+    </p>
+    {{end}} {{- if .phone}}
+    <p>
+        <span>Phone:</span> {{.phone}}
+    </p>
+    {{end}} {{- if .profiles}} {{- range .profiles}} {{- if .network}}
+    <p>
+        <span>{{ .network}}: </span> {{- if .url}}
+        <a href="{{.url}}" target="_blank" rel="noopener">{{ .username}}</a> {{else}} {{ .username}} {{end}}
+    </p>
+    {{end}} {{end}} {{end}}
+</section>
+-->

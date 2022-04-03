@@ -1,0 +1,24 @@
+<h2>
+    Skills
+</h2>
+<section id="skills" class="row">
+    <div class="col-sm-9">
+        <div class="row">
+            {{range .}}
+            <div class="col-sm-6">
+
+                <div class="name">
+                    <h4>{{ .name}}</h4>
+                </div>
+                {{if .keywords}}
+                <ul class="skills">
+                    {{range .keywords}}
+                    <li>{{ .}}</li>
+                    {{end}}
+                </ul>
+                {{end}}
+            </div>
+            {{end}}
+        </div>
+    </div>
+</section>

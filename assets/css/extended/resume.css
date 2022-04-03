@@ -1,0 +1,129 @@
+            #resume h1 {
+            font-size: 26px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+          }
+          
+          #resume h2 {
+            margin-top: 2rem;
+            font-size: 12px;
+            font-weight: 600;
+            /* color: var(--headline); */
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+          }
+          
+          #resume h3 {
+            display: block;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 16px;
+            letter-spacing: 1.2px;
+            margin-top: 0.5rem;
+          }
+          
+          #resume h4 {
+            font-size: 14px;
+            /* color: var(--sub-headline); */
+            padding-top: 0.5rem;
+            padding-bottom: 0.25rem;
+          }
+          
+          #resume p,
+          li {
+            margin-bottom: 0.25rem;
+            font-size: 14px;
+          }
+          
+          #resume a {
+            transition: box-shadow 160ms ease 0s;
+            border-bottom: 2px solid var(--primary);
+            text-decoration: none;
+            /* color: var(--text); */
+          }
+          
+          #resume a:hover {
+            box-shadow: var(--tertiary) 0px -0.2em 0px inset;
+          }
+          
+          #resume section ul {
+            margin-top: 0.5rem;
+            margin-left: 2.5rem;
+            list-style: disc;
+          }
+          
+          #resume .contact,
+          .languages {
+            padding-top: 1rem;
+          }
+          
+          #resume .contact span {
+            width: 100px;
+            display: inline-block;
+          }
+          
+          #resume .languages span {
+            width: 100px;
+            display: inline-block;
+          }
+          
+          #resume ul {
+            margin-top: 0.5rem;
+            margin-left: 2.5rem;
+            list-style: disc;
+          }
+          
+          #resume .skills ul {
+            display: inline;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+          }
+          
+          #resume .skills li {
+            white-space: nowrap;
+            list-style-type: none;
+            display: inline-block;
+            /* background-color: var(--sub-headline); */
+            border-bottom: 1px solid var(--tertiary);
+            border-right: 1px solid var(--tertiary);
+            border-radius: 3px;
+            background: var(--tertiary);
+          }
+          
+          #resume .position {
+            margin-bottom: 1.5rem;
+          }
+          
+          #resume .grey {
+            /* color: var(--sub-headline);*/
+          }
+          
+          #resume .header {
+            display: flex;
+            justify-content: space-between;
+          }
+          
+          #resume .pdf {
+            /* color: var(--headline); */
+            transition: color ease 160ms;
+            border: none;
+            box-shadow: none;
+          }
+          
+          #resume .pdf:hover {
+            box-shadow: none;
+            /* color: var(--sub-headline); */
+          }
+          
+          @media print {
+            body {
+              padding: 0rem;
+            }
+            section,
+            div {
+              page-break-inside: avoid;
+            }
+            .pdf {
+              display: none;
+            }

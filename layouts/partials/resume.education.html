@@ -1,0 +1,8 @@
+<h2>Education</h2>
+{{range .}}
+<section class="position">
+    <h3>{{ .institution}}</h3>
+    <h4>
+        {{if .studyType }} {{ .studyType}} {{end}} {{if .area }} {{if .studyType }} - {{end}} {{.area}} {{end}}{{if .startDate}} | {{ .startDate }} {{end}} {{if .endDate}} - {{ .endDate }} {{else}} {{if .startDate}} - Current {{end}} {{end}}
+</section>
+{{end}}

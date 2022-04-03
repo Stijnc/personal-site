@@ -1,0 +1,17 @@
+<h2>Projects</h2>
+{{range .}}
+<section class="position">
+    <h3>
+        {{if .url}}
+        <a target="_blank" rel="noopener" href="{{ .website}}">{{ .name}}</a> {{else}} {{ .name}} {{end}}
+    </h3>
+
+    {{if .releaseDate}}
+    <h4>
+        {{ .releaseDate | time.Format "MMM, YYYY"}}
+    </h4>
+    {{end}} {{if .summary}}
+    <p>{{ .summary}}</p>
+    {{end}}
+</section>
+{{end}}

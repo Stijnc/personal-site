@@ -1,90 +1,27 @@
  {{- define "main" }} {{ $jsonUrl := .Site.Params.jsonresume.url }} {{ $jsonData := getJSON $jsonUrl }}
-<section id="about">
-    <div class="row">
-        <div class="three columns">
 
-        </div>
-        <div class="nine columns main-col">
-            {{ $jsonData.basics.summary}}
-        </div>
-        <!-- end .main-col -->
-    </div>
-</section>
-
-
-<!-- About Section End-->
-
-
-<!-- Resume Section
- ================================================== -->
-<section id="resume">
-
-    <!-- Work
-    ----------------------------------------------- -->
-    {{ with $jsonData.work}}
-    <div class="row work">
-
-        <div class="three columns header-col">
-            <h1><span>Work</span></h1>
-        </div>
-
-        <div class="nine columns main-col">
-
-            {{- range . }}
-            <div class="row item">
-
-                <div class="twelve columns">
-
-                    <h3>{{ .name }}</h3>
-                    <p class="info">{{ .position }} <span>&bull;</span> <em class="date">{{ .startDate}} - {{if .endDate }} {{ .endDate }} {{ else }} present {{ end }}</em></p>
-                    <p>
-                        {{ .summary | markdownify }}
-                    </p>
-                    <p>
-                        {{ range .highlights}}
-                        <li>{{ . }}</li>
-                        {{ end }}
-                    </p>
-
-                </div>
-
-            </div>
-            {{ end }}
-            <!-- item end -->
-        </div>
-        <!-- main-col end -->
-
-    </div>
+<div id="resume">
+    {{with $jsonData.basics}}
+        {{partial "resume.contact.html" .}} 
     {{ end }}
-    <!-- End Work -->
+    {{with $jsonData.work}}
+        {{partial "resume.work.html" .}} 
+    {{- end}}
+    {{with $jsonData.volunteer}}
+        {{partial "resume.volunteer.html" .}} 
+    {{- end}}
+    {{with $jsonData.education}}
+        {{partial "resume.education.html" .}} 
+    {{- end}}
+    {{with $jsonData.projects}}
+    {{partial "resume.projects.html" .}} 
+    {{- end}}
+    {{with $jsonData.languages}}
+        {{partial "resume.languages.html" .}} 
+    {{- end}}
+    {{with $jsonData.skills}}
+        {{partial "resume.skills.html" .}} 
+    {{- end}}
 
-    <!-- certificates
-    ----------------------------------------------- -->
-    {{ with $jsonData.certificates}}
-    <div class="row certificates">
-
-        <div class="three columns header-col">
-            <h1><span>certificates</span></h1>
-        </div>
-        <div class="nine columns main-col">
-            {{ range .}}
-            <div class="row item">
-                <div class="twelve columns">
-                    <h3>{{ .issuer }} {{ .name }}}</h3>
-                    <p class="info"><em class="date">{{ .date }}</em></p>
-                </div>
-            </div>
-            {{ end }}
-            <!-- item end -->
-        </div>
-        <!-- main-col end -->
-    </div>
-    {{ end }}
-    <!-- End Education -->
-
-
-
-
-</section>
-<!-- Resume Section End-->
+</div>
 {{- end }} {{/* end main */}}

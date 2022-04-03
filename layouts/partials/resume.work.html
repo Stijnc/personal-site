@@ -1,0 +1,25 @@
+{{ $companies := slice }} {{ range . }} {{ $companies = $companies | append .name }} {{ end }} {{ $companies = uniq $companies }} {{ $work := slice }}{{ $work = .}}
+<h2>
+    Work experience
+</h2>
+{{ range $companies }} {{ $company := . }} {{ range $index, $values := where $work "name" $company }} {{ if (eq $index 0) }}
+<h3>
+    {{- if .url }}
+    <a target="_blank" rel="noopener" href="{{ .url }}">{{$company}}</a> {{else}} $company {{end}}
+</h3>
+{{end}}
+<h4>
+    {{ .position}} {{if .startDate}} | {{ .startDate }} {{end}} {{if .endDate}} - {{ .endDate }} {{else}} {{if .startDate}} - Current {{end}} {{end}}
+
+</h4>
+{{if .summary}}
+<div class="summary">
+    <p>{{ .summary}}</p>
+</div>
+{{end}} {{if .highlights}}
+<ul class="highlights">
+    {{range .highlights}}
+    <li>{{ . }}</li>
+    {{end}}
+</ul>
+{{end}} {{ end }} {{ end }}
