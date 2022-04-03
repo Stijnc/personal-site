@@ -113,9 +113,9 @@ menu:
       name: about
       url: /about/
       weight: 20
-    - identifier: Dexmach
-      name: dexmach
-      url: https://www.dexmach.com
+    - identifier: Run
+      name: stijn.run
+      url: https://stijn.run
       weight: 40
     - identifier: links
       name: links
