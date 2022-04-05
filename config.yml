@@ -90,7 +90,7 @@ params:
     scriptsrc: ["'self'", "*.vo.msecnd.net", "'unsafe-inline'"]
     frameancestors: ["'self'"]
     prefetchsrc: ["'self'"]
-    connectsrc: ["'https://dc.services.visualstudio.com/v2/track'", "'self'"]
+    connectsrc: ["https://dc.services.visualstudio.com", "'self'"]
 
   jsonresume:
     url: "https://raw.githubusercontent.com/Stijnc/resume/main/src/stijncallebaut.resume.json"
