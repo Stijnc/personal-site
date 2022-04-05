@@ -1,6 +1,10 @@
 name: deploy to github pages
 
 on:
+  repository_dispatch:
+    types:
+      - my-talks
+      - my-resume
   push:
     paths-ignore:
       - '**/README.md'
