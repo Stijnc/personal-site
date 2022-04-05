@@ -41,5 +41,14 @@ I find this a elegant solution through its simplicity, but at the same time, I w
     </item>
     
     
+    <item>
+      <title>Talks</title>
+      <link>https://callebaut.io/talks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://callebaut.io/talks/</guid>
+      <description>talks</description>
+    </item>
+    
   </channel>
 </rss>
