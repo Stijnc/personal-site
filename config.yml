@@ -93,6 +93,8 @@ params:
 
   jsonresume:
     url: "https://raw.githubusercontent.com/Stijnc/resume/main/src/stijncallebaut.resume.json"
+  jsontalks:
+    url: "https://raw.githubusercontent.com/Stijnc/talks/main/stijncallebaut.talks.json"
 
 taxonomies:
   category: categories
@@ -112,6 +114,10 @@ menu:
     - identifier: About
       name: about
       url: /about/
+      weight: 20
+    - identifier: Talks
+      name: talks
+      url: /talks/
       weight: 20
     - identifier: Run
       name: stijn.run
