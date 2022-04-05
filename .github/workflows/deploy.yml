@@ -69,5 +69,13 @@ jobs:
           user_email: "github-actions[bot]@users.noreply.github.com"
           commit_message: ${{ github.event.head_commit.message }}
           cname: ${{ env.CNAME }}
-
+      - name: Annotate deployment
+        uses: wictorwilen/application-insights-action@v1
+        id: annotation
+        with:
+          applicationId: ${{ secrets.APP_INSIGHTS_ID }}
+          apiKey: ${{secrets.APP_INSIGHTS_API_KEY}}
+          releaseName: ${GITHUB_SHA::8}
+          message: ${{ github.event.head_commit.message }} ${{ github.event_name }}
+          actor: ${{ github.actor }}
 
