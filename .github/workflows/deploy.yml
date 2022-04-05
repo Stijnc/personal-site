@@ -69,13 +69,26 @@ jobs:
           user_email: "github-actions[bot]@users.noreply.github.com"
           commit_message: ${{ github.event.head_commit.message }}
           cname: ${{ env.CNAME }}
+      - name: Get short SHA
+        id: slug
+        run: echo "::set-output name=sha8::$(echo ${GITHUB_SHA} | cut -c1-8)"
+      - name: Create release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ steps.today.outputs.date }}-${{ steps.slug.outputs.sha8 }}
+          release_name: Release v${{ steps.today.outputs.date }}-${{ steps.slug.outputs.sha8 }}
+          draft: false
+          prerelease: false
       - name: Annotate deployment
         uses: wictorwilen/application-insights-action@v1
         id: annotation
         with:
           applicationId: ${{ secrets.APP_INSIGHTS_ID }}
           apiKey: ${{secrets.APP_INSIGHTS_API_KEY}}
-          releaseName: ${GITHUB_SHA::8}
-          message: ${{ github.event.head_commit.message }} ${{ github.event_name }}
+          releaseName: ${{ steps.slug.outputs.sha8 }}
+          message: ${{ github.event.head_commit.message }}
           actor: ${{ github.actor }}
 
