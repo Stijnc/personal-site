@@ -71,7 +71,10 @@ jobs:
           cname: ${{ env.CNAME }}
       - name: Get short SHA
         id: slug
-        run: echo "::set-output name=sha8::$(echo ${GITHUB_SHA} | cut -c1-8)"
+        run: echo "sha8=$(echo ${GITHUB_SHA} | cut -c1-8)" >> $GITHUB_OUTPUT
+      - name: Get current date
+        id: today
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
       - name: Create release
         id: create_release
         uses: actions/create-release@v1
