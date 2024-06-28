@@ -56,7 +56,7 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: Stijn Callebaut
-    subtitle: "&#128075; I'm <strong>Stijn Callebaut</strong>, COO at DexMach.<br /> I like running, the outdoors, a good book from time to time and lego. <br /> At <a href='https://www.dexmach.com'>DexMach</a> I drive operational excellence at both professional and managed services. <br /> I believe openness and inclusiveness are key for organizational and professional growth, <br /> and I engage in customers cloud journeys to have direct feedback. <br /> Let's Connect <span style='font-size:21px;'>&#x2615;</span><br />"
+    subtitle: "&#128075; I'm <strong>Stijn Callebaut</strong>, Cloud Solution lead at UCB.<br /> I like running, the outdoors, a good book from time to time and lego. <br /> At <a href='https://www.ucb.com'>UCB</a> I drive operational excellence within the cloud team, help put focus on the technology that matters. <br /> I believe openness and inclusiveness are key for organizational and professional growth, <br /> and I engage in stakeholders' cloud journeys to have direct feedback. <br /> Let's Connect <span style='font-size:21px;'>&#x2615;</span><br />"
     imageUrl: "img/profile.webp"
     imageTitle: Stijn Callebaut
 
